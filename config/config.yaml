@@ -1,0 +1,13 @@
+artifacts_root: artifacts
+
+# In essence, this YAML file provides a structured configuration for the MLOPS pipeline, specifically for the data ingestion stage.
+# The pipeline, when executed, will likely follow these instructions:
+# Download the zip file of chicken fecal images from the specified GitHub URL.
+# Save this zip file locally in the specified directory.
+# Unzip this data in the designated directory for further processing.
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://github.com/AMMAND3/MLOPS_Data/raw/main/Chicken-fecal-images.zip
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
